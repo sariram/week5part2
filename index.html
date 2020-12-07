@@ -1,26 +1,77 @@
+
 <!doctype html>
 <html class="" lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Week 5, Part 2</title>
+  <title>Week 5 Part 2: Story Generator</title>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="http://sariram.me/sr_favicon.png">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-  <body>
+<body class="text-center">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">Vacation Generator</h3>
+        <nav class="nav nav-masthead justify-content-center">
+        </nav>
+      </div>
+    </header>
 
-    <h1>Week 5, Part 2</h1>
 
-	</body>
 
+    <div role="main" class="inner cover">
+
+      <p>You and your bestie are going on a vacation! Type in your names and select a theme to curate your next adventure.</p>
+
+      <div>
+        <label for="customname">You</label>
+        <input id="customname" type="text" placeholder="Name">
+      </div>
+      <div>
+        <label for="customnamE">Your BFF</label>
+        <input id="customnamE" type="text" placeholder="Name">
+      </div>
+
+      <p>&emsp;</p>
+      <p>Choose a theme</p>
+
+      <div>
+        <label for="ice">❄️Winter Wonderland</label><input id="ice" type="radio" name="ukus" value="ice">
+        <label for="tropics">🌴Easy Breezy Tropicana</label><input id="tropics" type="radio" name="ukus" value="tropics">
+        <label for="mountains">‍⛰️Mountaineering & Adventuring</label><input id="mountains" type="radio" name="ukus" value="mountains">
+      </div>
+
+      <a class="btn btn-lg btn-primary randomize">Create your getaway</a>
+      <p>&emsp;</p>
+      <p>&emsp;</p>
+      <p class="story"></p>
+      <a class="btn btn-lg btn-secondary reset hide" onClick="refreshPage()">Choose a new theme</a>
+
+    </div>
+
+
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p> Used <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+
+</body>
 </html>
